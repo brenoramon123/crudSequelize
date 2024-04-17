@@ -1,1 +1,9 @@
-<h1>Example App: Home</h1>
+<h1>Lista de Livros</h1>
+<ul>
+    {{#each livro}}
+        <li>
+            Título: {{nome}} <br>
+            <a href="livros/verMais/{{id}}">Ver mais</a>
+        </li>    
+    {{/each}}
+</ul>
